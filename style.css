@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+    background-color: #181A1B;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    background-color: #181A1B;
+    z-index: 100;
+    
+}
+
+
+.upper, .lower {
+    height: 50%;
+    display:flex;
+    
+}
+
+
+.upper .left-side {
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+
+main {
+    
+    z-index: -10;
+    width: 50%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+main h3 {
+    margin-bottom: 30px;
+
+}
+
+main p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
