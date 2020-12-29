@@ -47,11 +47,28 @@ $db = [
 <header>
     <div class="upper">
         <div class="left-side">
-            <div class="logo">GOOGLE</div>
+            <div class="logo"><img src="Google-Logo.svg" alt=""></div>
             <span>Privacy e Termini</span>
         </div>
+        <div class="right-side">
+            <div class="avatar">
+                <img src="avatar.svg" alt="">
+            </div>
+            <div class="menu">
+                <img src="bars-solid.svg" alt="">
+
+            </div>
+        </div>
     </div>
-    <div class="lower"></div>
+    <div class="lower">
+        <ul>
+            <li>Introduzione</li>
+            <li>Norme sulla privacy</li>
+            <li>Termini di servizio</li>
+            <li>Tecnologie</li>
+            <li>Domande frequenti</li>
+        </ul>
+    </div>
 
 </header>
 
@@ -59,8 +76,29 @@ $db = [
     <?php foreach ($db as $k => $v) {
     ?> <h3><?= $v["question"] ?></h3>
         <p><?= $v["answer"] ?></p>
-        
+
 
     <?php
     }  ?>
 </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="list">
+            <ul>
+                <li>Google</li>
+                <li>Tutto su Google</li>
+                <li>Privacy</li>
+                <li>Termini</li>
+            </ul>
+        </div>
+        <div class="language">
+            <select name="languages" id="lang">
+                <option value="">Italiano</option>
+                <option value="">Inglese</option>
+                <option value="">Tedesco</option>
+                <option value="">Francese</option>
+            </select>
+        </div>
+    </div>
+</footer>
